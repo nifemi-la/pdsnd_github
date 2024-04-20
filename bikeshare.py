@@ -37,7 +37,6 @@ def get_filters():
     days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     day = input('Please choose a day (all, monday, tuesday, ... sunday): ').lower()
 
-
     print('-'*40)
     return city, month, day
 
@@ -169,24 +168,23 @@ def user_stats(df):
 
      # TO DO: Display earliest, most recent, and most common year of birth
     
-    try:  #Earliest birth year
+    try:  # determine the earliest birth year while accounting for error if in washington dataset
         earliest_birth_year = df['Birth Year'].min()
         print('\nEarliest Year:', earliest_birth_year)
     except KeyError:
         print("\nEarliest Year:\nNo data available for this month.")
         
-    try: #Recent birth Year
+    try: # determine the most recent birth Year while accounting for error if in washington dataset
         most_recent_birth_year = df['Birth Year'].max()
         print('\nMost Recent Year:', most_recent_birth_year)
     except KeyError:
         print("\nMost Recent Year:\nNo data available for this month.")
         
-    try: #Most Common Birth Year 
+    try: # determine the most Common Birth Year while accounting for error if in washington dataset
         most_common_birth_year = df['Birth Year'].value_counts().idxmax()
         print('\nMost Common Year:', most_common_birth_year)
     except KeyError:
         print("\nMost Common Year:\nNo data available for this month.")
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
