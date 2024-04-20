@@ -1,6 +1,6 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
-### April 19, 2024
+### Project Information
 This project was created on April 9th 2024. This file was created April 19, 2024 in alignement with the second project in the UDACITY Programming for Data Science Nanodegree Program.
 
 ### Bikeshare Project- Explore US Bikeshare Data 
@@ -41,7 +41,7 @@ _4. User info_
 - earliest, most recent, most common year of birth (available only for NYC and Chicago)
 
 ### Files required 
-To answer these questions using Python, I have written a Python script saves as **bikeshare.py** file, and you will do your scripting in there also. We will need the three city dataset files too:
+To answer these questions using Python, I have written a Python script saved as **bikeshare.py** file, and you will do your scripting in there also. We will need the three city dataset files too:
 * chicago.csv
 * new_york_city.csv
 * washington.csv
