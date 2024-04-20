@@ -41,7 +41,7 @@ _4. User info_
 - earliest, most recent, most common year of birth (available only for NYC and Chicago)
 
 ### Files required 
-To answer these questions using Python, I have written a Python script saves as **bikeshare.py** file, and you will do your scripting in there also. We will need the three city dataset files too:
+To answer these questions using Python, I have written a Python script saved as **bikeshare.py** file, and you will do your scripting in there also. We will need the three city dataset files too:
 * chicago.csv
 * new_york_city.csv
 * washington.csv
